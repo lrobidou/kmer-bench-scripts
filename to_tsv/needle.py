@@ -1,8 +1,5 @@
 import argparse
 
-needle_output_filename = "needle/expressions.out"
-tsv_filename = "needle/query.tsv"
-
 
 def main():
     parser = argparse.ArgumentParser(description="BQF to tsv",

@@ -1,6 +1,4 @@
 import argparse
-from os import listdir
-from os.path import isfile, join
 
 def compute_kmer_per_read(query_filepath):
     kmer_per_read = []
@@ -95,8 +93,3 @@ def main():
     
 if __name__ == "__main__":
     main()
-
-
-
-
-
