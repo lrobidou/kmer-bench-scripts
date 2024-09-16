@@ -27,8 +27,8 @@ def main():
         with open(filename, "r") as fichier:
             for i, ligne in enumerate(fichier):
                 ligne = ligne.strip()
-                if i == 0:
-                    continue
+                # if i == 0:
+                #     continue
                 if not ligne:
                     break
                 if not ligne.startswith(">"):
