@@ -8,5 +8,5 @@ python to_tsv/ggcat.py -i ${query_res_folder}/ggcat.jsonl -q ${query_file} -o to
 python to_tsv/needle.py -i ${query_res_folder}/needle.out -o to_tsv/needle.tsv -d "${first_line_of_REINDEER}"
 python to_tsv/squeakr.py -i ${query_res_folder}/squeakr -q ${query_file} -o to_tsv/squeakr.tsv -d "${first_line_of_REINDEER}"
 python to_tsv/sshash.py -i ${query_res_folder}/sshash -o to_tsv/sshash.tsv -d "${first_line_of_REINDEER}"
-# cat ${query_res_folder}/reindeer.txt > to_tsv/reindeer.tsv
+python to_tsv/kmindex.py -i ${query_res_folder}/kmindex -o to_tsv/kmindex.tsv -d "${first_line_of_REINDEER}"
 sed -e 's/0-0://g' -e 's/\*/0/g' ${query_res_folder}/reindeer.txt > to_tsv/reindeer.tsv
