@@ -1,6 +1,8 @@
 #!/bin/bash
 
 TSV_FOLDER=$1
+K=$2
+ALPHA=$3
 
 FILES=$(find $TSV_FOLDER -name "*.tsv" -exec basename {} .tsv \;)
 
@@ -8,8 +10,8 @@ for FILE in $FILES; do
   echo "${FILE} = \"${TSV_FOLDER}/${FILE}.tsv\""
 done
 
-echo "k = 31"
-echo "alpha = 0.4"
+echo "k = ${K}"
+echo "alpha = ${ALPHA}"
 
 mkdir -p graphs/mustaches/kmers/
 mkdir -p graphs/mustaches/reads/
