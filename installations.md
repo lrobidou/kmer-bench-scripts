@@ -4,9 +4,9 @@ This markdown contains the commands to install the tools. Some of them require s
 WARNING: Clone all the git repositories in a single folder (do not "spread them" accross your filesystem). This is necessary to run the scripts that run the tools.
 
 <!-- vscode-markdown-toc -->
-* 1. [REINDEER](#REINDEER)
-	* 1.1. [BCALM for REINDEER](#BCALMforREINDEER)
-	* 1.2. [REINDEER](#REINDEER-1)
+* 1. [REINDEER](#reindeer)
+	* 1.1. [BCALM for REINDEER](#bcalmforreindeer)
+	* 1.2. [REINDEER](#reindeer-1)
 * 2. [SSHash](#SSHash)
 	* 2.1. [BCALM for SSHash](#BCALMforSSHash)
 	* 2.2. [UST for SSHash](#USTforSSHash)
@@ -28,8 +28,8 @@ WARNING: Clone all the git repositories in a single folder (do not "spread them"
 <!-- /vscode-markdown-toc -->
 
 
-##  1. <a name='REINDEER'></a>REINDEER
-###  1.1. <a name='BCALMforREINDEER'></a>BCALM for REINDEER
+##  1. <a name='reindeer'></a>REINDEER
+###  1.1. <a name='bcalmforreindeer'></a>BCALM for REINDEER
 ```bash
 git clone --recursive https://github.com/GATB/bcalm bcalm_reindeer
 cd bcalm_reindeer/
@@ -37,7 +37,7 @@ git checkout --recurse-submodules 9b0f4a0f0d8cc7f78951c131819629cfb47f0165
 conda create -p bcalm_env && conda activate ./bcalm_env && conda install anaconda::zlib
 mkdir build;  cd build;  cmake ..;  make -j 8
 ```
-###  1.2. <a name='REINDEER-1'></a>REINDEER
+###  1.2. <a name='reindeer-1'></a>REINDEER
 ```bash
 git clone --recursive https://github.com/kamimrcht/REINDEER.git
 cd REINDEER
