@@ -12,7 +12,7 @@ WARNING: Clone all the git repositories in a single folder (do not "spread them"
 	* 2.2. [UST for SSHash](#USTforSSHash)
 	* 2.3. [SSHash](#SSHash-1)
 * 3. [kmindex](#kmindex)
-* 4. [GGCAT](#GGCAT)
+* 4. [GGCAT](#ggcat)
 * 5. [BQF](#BQF)
 	* 5.1. [KMC for BQF](#KMCforBQF)
 	* 5.2. [BQF](#BQF-1)
@@ -75,7 +75,7 @@ conda activate ./kmindex_env
 conda install -c conda-forge -c tlemane kmindex
 ```
 
-##  4. <a name='GGCAT'></a>GGCAT
+##  4. <a name='ggcat'></a>GGCAT
 ```bash
 git clone https://github.com/algbio/ggcat --recursive
 cd ggcat
