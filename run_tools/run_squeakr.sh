@@ -29,9 +29,9 @@ run_squeakr() {
   parameter=$(compute_parameter "${NTCARD_DIR}/${NTCARD_FILE}")
   # echo $parameter
   FILE1="${DATA_DIR}/${BASE_NAME}_1.fastq.gz"
-  # FILE2="${DATA_DIR}/${BASE_NAME}_2.fastq.gz"
+  FILE2="${DATA_DIR}/${BASE_NAME}_2.fastq.gz"
 
-  $SQUEAKR_BIN count $OPTIONS -s $parameter -o "${INDEX_FOLDER}/${BASE_NAME}.squeakr" $FILE1  # $FILE2
+  $SQUEAKR_BIN count $OPTIONS -s $parameter -o "${INDEX_FOLDER}/${BASE_NAME}.squeakr" $FILE1 $FILE2
 }
 
 export -f run_squeakr compute_parameter extract_number
