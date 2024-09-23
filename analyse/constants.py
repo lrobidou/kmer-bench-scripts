@@ -1,0 +1,9 @@
+sshash = "to_tsv/sshash.tsv"
+needle = "to_tsv/needle.tsv"
+squeakr = "to_tsv/squeakr.tsv"
+reindeer = "to_tsv/reindeer.tsv"
+ggcat = "to_tsv/ggcat.tsv"
+kmindex = "to_tsv/kmindex.tsv"
+bqf = "to_tsv/bqf.tsv"
+k = 31
+alpha = 0.4
