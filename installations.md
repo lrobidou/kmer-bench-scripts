@@ -1,7 +1,7 @@
 # Installations of tools
 This markdown contains the commands to install the tools. Some of them require some other tools for preprocessing. Instructions to install these tools are available as well.
 
-WARNING: Clone all the git repositories in a given folder (do not "spread them" accross your filesystem). This is necessary to run the scripts that run the tools.
+WARNING: Clone all the git repositories in a single folder (do not "spread them" accross your filesystem). This is necessary to run the scripts that run the tools.
 
 <!-- vscode-markdown-toc -->
 * 1. [REINDEER](#REINDEER)
