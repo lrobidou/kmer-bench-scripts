@@ -13,12 +13,13 @@ WARNING: Clone all the git repositories in a single folder (do not "spread them"
 	* 2.3. [SSHash](#SSHash-1)
 * 3. [kmindex](#kmindex)
 * 4. [GGCAT](#GGCAT)
-* 5. [KMC](#KMC)
-* 6. [BQF](#BQF)
-	* 6.1. [ntCard for BQF](#ntCardforBQF)
-	* 6.2. [BQF](#BQF-1)
-* 7. [squeakr](#squeakr)
-* 8. [needle](#needle)
+* 5. [BQF](#BQF)
+	* 5.1. [KMC for BQF](#KMCforBQF)
+	* 5.2. [BQF](#BQF-1)
+* 6. [squeakr](#squeakr)
+	* 6.1. [ntCard for squeakr](#ntCardforsqueakr)
+	* 6.2. [squeakr](#squeakr-1)
+* 7. [needle](#needle)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -82,25 +83,15 @@ git checkout --recurse-submodules a91ecc97f286b737b37195c0a86f0e11ad6bfc3b
 cargo install --path crates/cmdline/ --locked --features "kmer-counters"
 ```
 
-##  5. <a name='KMC'></a>KMC
+##  5. <a name='BQF'></a>BQF
+##  5.1 <a name='KMCforBQF'></a>KMC for BQF
 ```bash
 git clone --recursive https://github.com/refresh-bio/kmc
 cd kmc
 git checkout --recurse-submodules 65bff733bc6487e33f04ff134da50e6b7cb3031f
 make -j32
 ```
-
-##  6. <a name='BQF'></a>BQF
-###  6.1. <a name='ntCardforBQF'></a>ntCard for BQF
-```bash
-git clone --recursive https://github.com/bcgsc/ntCard
-cd ntCard/
-git checkout --recurse-submodules 9433d03872380c13bb131abf1e388e94862a4f15
-./autogen.sh
-./configure
-make
-```
-###  6.2. <a name='BQF-1'></a>BQF
+###  5.2. <a name='BQF-1'></a>BQF
 ```bash
 git clone --recursive https://github.com/vicLeva/bqf
 cd bqf
@@ -110,7 +101,17 @@ cmake ..
 make
 ```
 
-##  7. <a name='squeakr'></a>squeakr
+##  6. <a name='squeakr'></a>squeakr
+###  6.1. <a name='ntCardforsqueakr'></a>ntCard for squeakr
+```bash
+git clone --recursive https://github.com/bcgsc/ntCard
+cd ntCard/
+git checkout --recurse-submodules 9433d03872380c13bb131abf1e388e94862a4f15
+./autogen.sh
+./configure
+make
+```
+###  6.2. <a name='squeakr-1'></a>squeakr
 ```bash
 git clone --recursive https://github.com/splatlab/squeakr
 cd squeakr
@@ -118,7 +119,7 @@ git checkout --recurse-submodules dcfaa18f267814d9e7d3437fbfc7348b869dab88
 make squeakr
 ```
 
-##  8. <a name='needle'></a>needle
+##  7. <a name='needle'></a>needle
 ```bash
 git clone --recursive https://github.com/seqan/needle
 cd needle
