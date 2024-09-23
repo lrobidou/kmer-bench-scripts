@@ -8,16 +8,16 @@ WARNING: Clone all the git repositories in a single folder (do not "spread them"
 	* 1.1. [BCALM for REINDEER](#bcalmforreindeer)
 	* 1.2. [REINDEER](#reindeer-1)
 * 2. [SSHash](#SSHash)
-	* 2.1. [BCALM for SSHash](#BCALMforSSHash)
-	* 2.2. [UST for SSHash](#USTforSSHash)
-	* 2.3. [SSHash](#SSHash-1)
+	* 2.1. [BCALM for SSHash](#bcalmforsshash)
+	* 2.2. [UST for SSHash](#ustforsshash)
+	* 2.3. [SSHash](#sshash-1)
 * 3. [kmindex](#kmindex)
 * 4. [GGCAT](#ggcat)
-* 5. [BQF](#BQF)
-	* 5.1. [KMC for BQF](#KMCforBQF)
-	* 5.2. [BQF](#BQF-1)
+* 5. [BQF](#bqf)
+	* 5.1. [KMC for BQF](#kmcforbqf)
+	* 5.2. [BQF](#bqf-1)
 * 6. [squeakr](#squeakr)
-	* 6.1. [ntCard for squeakr](#ntCardforsqueakr)
+	* 6.1. [ntCard for squeakr](#ntcardforsqueakr)
 	* 6.2. [squeakr](#squeakr-1)
 * 7. [needle](#needle)
 
@@ -45,22 +45,22 @@ git checkout --recurse-submodules 7d3148fe5c24b4d777989e1cfa6f2b3df0ebc10f
 make
 ```
 
-##  2. <a name='SSHash'></a>SSHash
-###  2.1. <a name='BCALMforSSHash'></a>BCALM for SSHash
+##  2. <a name='sshash'></a>SSHash
+###  2.1. <a name='bcalmforsshash'></a>BCALM for SSHash
 ```bash
 git clone --recursive https://github.com/GATB/bcalm bcalm_sshash
 cd bcalm_sshash
 git checkout --recurse-submodules 28cb70489107e707562a4e39846f16ce17b83646
 mkdir build;  cd build;  cmake ..;  make -j 8
 ```
-###  2.2. <a name='USTforSSHash'></a>UST for SSHash
+###  2.2. <a name='ustforsshash'></a>UST for SSHash
 ```bash
 git clone --recursive https://github.com/jermp/UST UST_SSHash
 cd UST_SSHash
 git checkout --recurse-submodules b3d07107e52c68098dee590bb6823fe411e1b72d
 make
 ```
-###  2.3. <a name='SSHash-1'></a>SSHash
+###  2.3. <a name='sshash-1'></a>SSHash
 ```bash
 git clone --recursive https://github.com/lrobidou/sshash
 cd sshash
@@ -83,15 +83,15 @@ git checkout --recurse-submodules a91ecc97f286b737b37195c0a86f0e11ad6bfc3b
 cargo install --path crates/cmdline/ --locked --features "kmer-counters"
 ```
 
-##  5. <a name='BQF'></a>BQF
-##  5.1 <a name='KMCforBQF'></a>KMC for BQF
+##  5. <a name='bqf'></a>BQF
+##  5.1 <a name='kmcforbqf'></a>KMC for BQF
 ```bash
 git clone --recursive https://github.com/refresh-bio/kmc
 cd kmc
 git checkout --recurse-submodules 65bff733bc6487e33f04ff134da50e6b7cb3031f
 make -j32
 ```
-###  5.2. <a name='BQF-1'></a>BQF
+###  5.2. <a name='bqf-1'></a>BQF
 ```bash
 git clone --recursive https://github.com/vicLeva/bqf
 cd bqf
@@ -102,7 +102,7 @@ make
 ```
 
 ##  6. <a name='squeakr'></a>squeakr
-###  6.1. <a name='ntCardforsqueakr'></a>ntCard for squeakr
+###  6.1. <a name='ntcardforsqueakr'></a>ntCard for squeakr
 ```bash
 git clone --recursive https://github.com/bcgsc/ntCard
 cd ntCard/
